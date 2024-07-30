@@ -1,0 +1,173 @@
+input[type="radio"]
+{
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+input[type="checkbox"]
+{
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+
+.title-icons
+{
+	border-width: 0px;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.title-main
+{
+	color: #0288D1;
+	font-size: 24px;
+	font-weight: 600;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	padding-bottom: 8px;
+}
+/****************************************/
+/*  Collapsible menu without javascript */
+/****************************************/
+
+.lbl-toggle {
+    display: block;
+    background-color: #EEEEEE;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+	font-weight: 600;
+    transition: all 0.25s ease-out;
+}
+
+.sub {
+	background-color: #FFFFFF;
+	color: #1565C0;
+}
+
+.lbl-toggle:hover {
+    background-color: #E0E0E0;
+}
+
+.lbl-toggle::before {
+    display: inline-block;
+    content: "\25BA\00A0";
+    font-weight: bold;
+}
+
+.toggle:checked + .lbl-toggle::before {
+    content: "\25BC\00A0";
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 2000px;
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    border-bottom: 1px solid rgba(250, 224, 66, .45);
+    padding: 10px;
+}
+
+/***************************************/
+
+input[type="text"]
+{
+	border: 1px solid #AAA;
+	color: #555;
+	font-size: inherit;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: 28px;
+	vertical-align: middle;
+}
+select 
+{
+	border: 1px solid #AAA;
+	color: #555;
+	font-size: inherit;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width: 150px;
+	height: 28px;
+	vertical-align: middle;
+}
+.detailheader
+{
+	/*Green*/
+	/*background-color: #76FF03;*/
+	font-weight: 400;
+	background-color: lightgray;
+	color: black;
+}
+.gridheader
+{
+	background-color: #0288D1;
+	font-weight: 400;
+	color: white;
+}
+.used
+{
+    border-collapse: collapse;    
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-color: #0288D1;
+    height: 36px;
+}
+.free
+{
+    border-collapse: collapse;    
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-color: Silver;
+    height: 36px;
+}
+.detail-first-column
+{
+	width: 200px;
+}
+.detail-second-column
+{
+	width: 100%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007baf;
+    border-color: #007bff;
+}
+
+.btn-danger{
+	color: #fff;
+    background-color: #FF0000;
+    border-color: #dc3545;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
